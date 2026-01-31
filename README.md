@@ -64,6 +64,8 @@ TestOut Client Pro Certification
 ______________________________________________________________________________
 
 Spiritual Reflections
+on Doctrine and Covenants 58:26–28
+https://youtube.com/shorts/iOVELUD_Ti0?feature=share
 
 
 
