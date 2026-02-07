@@ -1,1 +1,63 @@
 Cyber Lab Migration
+OVERVIEW
+Description
+Project Background
+
+Ensign College’s cybersecurity program currently relies on an on-premises cyber lab for hands-on exercises. This lab uses a Proxmox virtualization server protected by a Palo Alto firewall/VPN, enabling students to connect to virtual machines (e.g., Kali Linux attacker VMs, vulnerable servers, and monitoring systems) for penetration testing and defensive exercises. While effective, this setup has limitations:
+
+Scalability: Physical hardware restricts capacity.
+
+Remote Access: VPN-based access is cumbersome for remote learners.
+
+Maintenance: Hardware and network upkeep are resource-intensive.
+
+Opportunity
+
+Migrating the lab to AWS will create a scalable, flexible, and modern environment that aligns with industry best practices. Benefits include:
+
+On-demand provisioning of isolated Virtual Private Clouds (VPCs) for students/teams.
+
+Pre-configured virtual machines and cloud desktops.
+
+Support for red-team (offense) and blue-team (defense) activities in a secure sandbox.
+
+Exposure to cloud security skills, enhancing curriculum relevance.
+
+Project Description
+
+Key Design Elements:
+
+Isolated AWS VPC: Subnets for attacker, target, and defender systems; routing and security groups mimicking on-prem firewall rules.
+
+Virtual Machines (EC2): Kali Linux attacker VM, vulnerable targets (e.g., Metasploitable, OWASP Juice Shop), and SOC/defender VM.
+
+Student Access: Options include Amazon WorkSpaces for cloud desktops or a bastion host for SSH/RDP.
+
+Networking & Security: AWS Security Groups, Network ACLs, and possibly AWS Network Firewall or Client VPN.
+
+Integration & IAM: Proof-of-concept integration with LMS tools and role-based access control.
+
+Student will follow cloud security best practices and implement cost-saving measures (e.g., scheduled instance shutdowns).
+
+Summary
+Objectives
+Replicate On-Prem Lab in AWS with equivalent or enhanced functionality.
+Support Course Outcomes: Enable secure network design, ethical hacking, and monitoring exercises.
+Pilot Initial Course (e.g., IT 125) using the AWS lab.
+Create Documentation & Diagrams comparing legacy vs. cloud architecture.
+Identify Challenges & Mitigations: Address security, cost, and onboarding issues.
+Enhance Student Experience: Simplify access and enable remote participation.
+
+Key Deliverables: Provide a list of the key deliverables that the team should provide by the end of the project. Include completed activities, recommendation, and tools/resources developed during the project.
+Expected Deliverables
+• Functional AWS Lab Environment for at least one course.
+• Architecture Diagrams: Current vs. cloud setup.
+• Setup Documentation: VPC configs, instance details, automation scripts.
+• User Guide: Access instructions and troubleshooting tips.
+• Test Results & Feedback: Summary of trial exercises and observations.
+• Recommendations Report: Roadmap for full migration, including course priorities, cost estimates, and instructor training needs.
+Impact
+This project will modernize Ensign College’s cybersecurity program, providing students with real-world cloud security experience, improving accessibility, and reducing infrastructure constraints. The pilot will serve as a foundation for an 18-month full migration plan, positioning the program at the forefront of cybersecurity education.
+The student will give an honest account of their time usage each week to the project sponsor - please only log hours that are actually spent working on the project.
+The student will attend a bi-weekly course design meeting during the day in the United States. This is a mandatory meeting both times. If there are conflicts with your work or school schedule, then unfortunately you won’t be able to participate in the project.
+The student will work independently with minimal supervision and will be expected to work without step-by-step instructions.
